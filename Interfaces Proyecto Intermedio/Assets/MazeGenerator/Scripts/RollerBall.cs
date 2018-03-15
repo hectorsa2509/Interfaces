@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 //<summary>
@@ -15,9 +16,13 @@ public class RollerBall : MonoBehaviour {
 	private AudioSource mAudioSource = null;
 	private bool mFloorTouched = false;
 
+	Text guiText;
+
 	void Start () {
 		mRigidBody = GetComponent<Rigidbody> ();
 		mAudioSource = GetComponent<AudioSource> ();
+		guiText=GameObject.Find("elemento").GetComponent<Text>();
+
 	}
 
 	void FixedUpdate () {
@@ -69,10 +74,30 @@ public class RollerBall : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag.Equals ("Coin")) {
+			StartCoroutine(ShowMessage ("Oxígeno", 2));
+			//guiText.text = "Oxígeno";
 			if(mAudioSource != null && CoinSound != null){
 				mAudioSource.PlayOneShot(CoinSound);
 			}
 			Destroy(other.gameObject);
 		}
 	}
+
+	/* Mostrar texto. */
+	IEnumerator ShowMessage (string message, float delay) {
+		guiText.text = message;
+		guiText.color = Color.red;
+		guiText.enabled = true;
+		yield return new WaitForSeconds(delay);
+		guiText.enabled = false;
+	}
+
+	/* Reproducir Audio. */
+	/*IEnumerator StartAudio()
+	{
+		mAudioSource.Play();
+		yield return new WaitForSeconds(audio.clip.length);
+		mAudioSource.clip = otherClip;
+		mAudioSource.Play();
+	}*/
 }
