@@ -81,6 +81,15 @@ public class Abeja : MonoBehaviour {
 			}
 			Destroy(other.gameObject);
 		}
+
+		if (other.gameObject.tag.Equals ("Coin")) {
+			StartCoroutine(ShowMessage ("Azufre", 3));
+			//guiText.text = "Oxígeno";
+			if(mAudioSource != null && CoinSound != null){
+				mAudioSource.PlayOneShot(CoinSound);
+			}
+			Destroy(other.gameObject);
+		}
 	}
 
 	/* Mostrar texto. */

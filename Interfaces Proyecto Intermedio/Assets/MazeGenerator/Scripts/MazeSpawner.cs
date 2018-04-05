@@ -26,6 +26,14 @@ public class MazeSpawner : MonoBehaviour {
 	public bool AddGaps = true;
 	public GameObject GoalPrefab = null;
 	public GameObject GoalPrefab2 = null;
+	public GameObject GoalPrefab3 = null;
+	public GameObject GoalPrefab4 = null;
+	public GameObject GoalPrefab5 = null;
+	public GameObject GoalPrefab6 = null;
+	public GameObject GoalPrefab7 = null;
+	public GameObject GoalPrefab8 = null;
+
+
 
 	private BasicMazeGenerator mMazeGenerator = null;
 
@@ -52,35 +60,59 @@ public class MazeSpawner : MonoBehaviour {
 		}
 		mMazeGenerator.GenerateMaze ();
 		for (int row = 0; row < Rows; row++) {
-			for(int column = 0; column < Columns; column++){
-				float x = column*(CellWidth+(AddGaps?0.2f:0));
-				float z = row*(CellHeight+(AddGaps?0.2f:0));
-				MazeCell cell = mMazeGenerator.GetMazeCell(row,column);
+			for (int column = 0; column < Columns; column++) {
+				float x = column * (CellWidth + (AddGaps ? 0.2f : 0));
+				float z = row * (CellHeight + (AddGaps ? 0.2f : 0));
+				MazeCell cell = mMazeGenerator.GetMazeCell (row, column);
 				GameObject tmp;
-				tmp = Instantiate(Floor,new Vector3(x,0,z), Quaternion.Euler(0,0,0)) as GameObject;
+				tmp = Instantiate (Floor, new Vector3 (x, 0, z), Quaternion.Euler (0, 0, 0)) as GameObject;
 				tmp.transform.parent = transform;
-				if(cell.WallRight){
-					tmp = Instantiate(Wall,new Vector3(x+CellWidth/2,0,z)+Wall.transform.position,Quaternion.Euler(0,90,0)) as GameObject;// right
+				if (cell.WallRight) {
+					tmp = Instantiate (Wall, new Vector3 (x + CellWidth / 2, 0, z) + Wall.transform.position, Quaternion.Euler (0, 90, 0)) as GameObject;// right
 					tmp.transform.parent = transform;
 				}
-				if(cell.WallFront){
-					tmp = Instantiate(Wall,new Vector3(x,0,z+CellHeight/2)+Wall.transform.position,Quaternion.Euler(0,0,0)) as GameObject;// front
+				if (cell.WallFront) {
+					tmp = Instantiate (Wall, new Vector3 (x, 0, z + CellHeight / 2) + Wall.transform.position, Quaternion.Euler (0, 0, 0)) as GameObject;// front
 					tmp.transform.parent = transform;
 				}
-				if(cell.WallLeft){
-					tmp = Instantiate(Wall,new Vector3(x-CellWidth/2,0,z)+Wall.transform.position,Quaternion.Euler(0,270,0)) as GameObject;// left
+				if (cell.WallLeft) {
+					tmp = Instantiate (Wall, new Vector3 (x - CellWidth / 2, 0, z) + Wall.transform.position, Quaternion.Euler (0, 270, 0)) as GameObject;// left
 					tmp.transform.parent = transform;
 				}
-				if(cell.WallBack){
-					tmp = Instantiate(Wall,new Vector3(x,0,z-CellHeight/2)+Wall.transform.position,Quaternion.Euler(0,180,0)) as GameObject;// back
+				if (cell.WallBack) {
+					tmp = Instantiate (Wall, new Vector3 (x, 0, z - CellHeight / 2) + Wall.transform.position, Quaternion.Euler (0, 180, 0)) as GameObject;// back
 					tmp.transform.parent = transform;
 				}
-				if(cell.IsGoal && GoalPrefab != null){
-					tmp = Instantiate(GoalPrefab,new Vector3(x,1,z), Quaternion.Euler(0,0,0)) as GameObject;
+				if (cell.IsGoal && GoalPrefab != null) {
+					tmp = Instantiate (GoalPrefab, new Vector3 (x, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
 					tmp.transform.parent = transform;
 				}
-				if(cell.IsGoal && GoalPrefab2 != null){
-					tmp = Instantiate(GoalPrefab2,new Vector3(1,1,z), Quaternion.Euler(0,0,0)) as GameObject;
+				if (cell.IsGoal && GoalPrefab2 != null) {
+					tmp = Instantiate (GoalPrefab2, new Vector3 (1, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
+					tmp.transform.parent = transform;
+				}
+				if (cell.IsGoal && GoalPrefab3 != null) {
+					tmp = Instantiate (GoalPrefab3, new Vector3 (2, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
+					tmp.transform.parent = transform;
+				}
+				if (cell.IsGoal && GoalPrefab4 != null) {
+					tmp = Instantiate (GoalPrefab4, new Vector3 (3, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
+					tmp.transform.parent = transform;
+				}
+				if (cell.IsGoal && GoalPrefab5 != null) {
+					tmp = Instantiate (GoalPrefab5, new Vector3 (4, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
+					tmp.transform.parent = transform;
+				}
+				if (cell.IsGoal && GoalPrefab6 != null) {
+					tmp = Instantiate (GoalPrefab6, new Vector3 (5, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
+					tmp.transform.parent = transform;
+				}
+				if (cell.IsGoal && GoalPrefab7 != null) {
+					tmp = Instantiate (GoalPrefab7, new Vector3 (6, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
+					tmp.transform.parent = transform;
+				}
+				if (cell.IsGoal && GoalPrefab8 != null) {
+					tmp = Instantiate (GoalPrefab8, new Vector3 (7, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
 					tmp.transform.parent = transform;
 				}
 			}
