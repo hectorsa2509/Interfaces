@@ -589,6 +589,7 @@ MonoBehaviour:
   CellHeight: 4
   AddGaps: 0
   GoalPrefab: {fileID: 159624, guid: 850205124263c924ea0aa82f0fdf2673, type: 2}
+  GoalPrefab2: {fileID: 159624, guid: e0426674204a34aacb372a82a8947ef3, type: 2}
 --- !u!115 &999177115
 MonoScript:
   m_ObjectHideFlags: 0

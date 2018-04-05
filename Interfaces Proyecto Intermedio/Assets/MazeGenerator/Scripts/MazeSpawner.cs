@@ -25,6 +25,7 @@ public class MazeSpawner : MonoBehaviour {
 	public float CellHeight = 5;
 	public bool AddGaps = true;
 	public GameObject GoalPrefab = null;
+	public GameObject GoalPrefab2 = null;
 
 	private BasicMazeGenerator mMazeGenerator = null;
 
@@ -76,6 +77,10 @@ public class MazeSpawner : MonoBehaviour {
 				}
 				if(cell.IsGoal && GoalPrefab != null){
 					tmp = Instantiate(GoalPrefab,new Vector3(x,1,z), Quaternion.Euler(0,0,0)) as GameObject;
+					tmp.transform.parent = transform;
+				}
+				if(cell.IsGoal && GoalPrefab2 != null){
+					tmp = Instantiate(GoalPrefab2,new Vector3(1,1,z), Quaternion.Euler(0,0,0)) as GameObject;
 					tmp.transform.parent = transform;
 				}
 			}
