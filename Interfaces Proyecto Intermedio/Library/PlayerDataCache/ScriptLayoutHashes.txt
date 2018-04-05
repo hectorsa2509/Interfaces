@@ -1,9 +1,10 @@
 OSXStandalone
 SceneListBegin?
-Assets/MazeGenerator/Scene/Menu.unity
-Assets/MazeGenerator/Scene/demo.unity
+Assets/MazeGenerator/Menu.unity
+Assets/MazeGenerator/demo.unity
+Assets/MazeGenerator/Fin.unity
 SceneListEnd?
-1e5a07e5a19e9ca269fab3020d683620 Assembly-CSharp.dll:.MazeSpawner
+aea9e8fb4bd15591d682b4007fba5251 Assembly-CSharp.dll:.MazeSpawner
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -115,8 +116,10 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 070e78ac8e6a2e6c8cd35f94e0f32e15 Assembly-CSharp.dll:.Abeja
+d5be1ca94278aa7358c511834dede500 Assembly-CSharp.dll:.tiempo
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
+32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery

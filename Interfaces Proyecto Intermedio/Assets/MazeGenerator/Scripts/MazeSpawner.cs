@@ -32,7 +32,7 @@ public class MazeSpawner : MonoBehaviour {
 	public GameObject GoalPrefab6 = null;
 	public GameObject GoalPrefab7 = null;
 	public GameObject GoalPrefab8 = null;
-
+	public GameObject[] Monedas;
 
 
 	private BasicMazeGenerator mMazeGenerator = null;
@@ -83,6 +83,7 @@ public class MazeSpawner : MonoBehaviour {
 					tmp = Instantiate (Wall, new Vector3 (x, 0, z - CellHeight / 2) + Wall.transform.position, Quaternion.Euler (0, 180, 0)) as GameObject;// back
 					tmp.transform.parent = transform;
 				}
+				/*
 				if (cell.IsGoal && GoalPrefab != null) {
 					tmp = Instantiate (GoalPrefab, new Vector3 (x, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
 					tmp.transform.parent = transform;
@@ -115,8 +116,32 @@ public class MazeSpawner : MonoBehaviour {
 					tmp = Instantiate (GoalPrefab8, new Vector3 (7, 1, z), Quaternion.Euler (0, 0, 0)) as GameObject;
 					tmp.transform.parent = transform;
 				}
+				*/
 			}
 		}
+
+		bool[] usado = new bool[Columns * Rows + 9];
+
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 4; j++) {
+				int c = Random.Range (0, Columns);
+				int r = Random.Range (0, Rows);
+
+				while (usado [c * Rows + r]) {
+					c = Random.Range (0, Columns);// + CellWidth / 2.0f;
+					r = Random.Range (0, Rows);// + CellHeight / 2.0f;
+				}
+
+
+				int w = (int)(c * CellWidth);// + CellWidth / 2.0f;
+				int h = (int)(r * CellHeight);// + CellHeight / 2.0f;
+
+				usado [(int)(c * Rows + r)] = true;
+
+				GameObject tmp = Instantiate (Monedas [i], new Vector3 (h, 1, w), Quaternion.Euler (0, 0, 0)) as GameObject;
+			}
+		}
+
 		if(Pillar != null){
 			for (int row = 0; row < Rows+1; row++) {
 				for (int column = 0; column < Columns+1; column++) {

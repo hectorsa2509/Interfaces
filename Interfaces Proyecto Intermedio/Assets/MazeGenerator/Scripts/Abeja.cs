@@ -28,10 +28,10 @@ public class Abeja : MonoBehaviour {
 	void FixedUpdate () {
 		if (mRigidBody != null) {
 			if (Input.GetButton ("Horizontal")) {
-				mRigidBody.AddForce(Vector3.right*Input.GetAxis("Horizontal")/3, ForceMode.Impulse);
+				mRigidBody.AddForce(Vector3.right*Input.GetAxis("Horizontal")/5, ForceMode.Impulse);
 			}
 			if (Input.GetButton ("Vertical")) {
-				mRigidBody.AddForce(Vector3.forward*Input.GetAxis("Vertical")/3, ForceMode.Impulse);
+				mRigidBody.AddForce(Vector3.forward*Input.GetAxis("Vertical")/5, ForceMode.Impulse);
 			}
 			if (Input.GetButtonDown("Jump")) {
 				if(mAudioSource != null && JumpSound != null){
@@ -73,15 +73,16 @@ public class Abeja : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag.Equals ("Coin")) {
-			StartCoroutine(ShowMessage ("Oxígeno", 2));
+		//Si la abeja toca una moneda(8).
+		if (other.gameObject.layer.Equals (8)) {
+			StartCoroutine(ShowMessage (other.gameObject.tag, 2));
 			//guiText.text = "Oxígeno";
 			if(mAudioSource != null && CoinSound != null){
 				mAudioSource.PlayOneShot(CoinSound);
 			}
 			Destroy(other.gameObject);
 		}
-
+		/*
 		if (other.gameObject.tag.Equals ("Coin")) {
 			StartCoroutine(ShowMessage ("Azufre", 3));
 			//guiText.text = "Oxígeno";
@@ -90,6 +91,7 @@ public class Abeja : MonoBehaviour {
 			}
 			Destroy(other.gameObject);
 		}
+*/
 	}
 
 	/* Mostrar texto. */

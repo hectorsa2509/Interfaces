@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2399664}
   - component: {fileID: 9529464}
   - component: {fileID: 6542456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CoinPrefab4
-  m_TagString: Coin
+  m_TagString: "F\xF3sforo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

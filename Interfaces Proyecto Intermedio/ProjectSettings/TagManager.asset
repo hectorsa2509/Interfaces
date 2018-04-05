@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Floor
+  - Coin
+  - Azufre
+  - "Ox\xEDgeno"
+  - Cloro
+  - "F\xF3sforo"
+  - "Hidr\xF3geno"
+  - Sodio
+  - Carbono
+  - "Nitr\xF3geno"
   layers:
   - Default
   - TransparentFX
@@ -13,7 +23,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Coin
   - 
   - 
   - 
