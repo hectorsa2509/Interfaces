@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -65,7 +65,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Default
+  m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 618
-  m_MinSize: {x: 681, y: 492}
+  m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 4347
+  controlID: 49
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 618
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 4348
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 347
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 4349
+  controlID: 51
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 269
     height: 347
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -369,7 +369,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 2cddfbff0003fcffd019fcff903cfcff4056fcff965dfcffd673fcff2e9bfcff1cb1fcffaeb2fcff8adbfcff0ef1fcff3419fdff381bfdff3231fdff1c32fdff8c51fdff7203feff5230feff0831feff1c32feff3832feff9435feff3ecbfeffb2cdfeff325fffff4e60ffff56fbffff00000000643a0000
+    m_ExpandedIDs: fac4fdfff83efeffd43ffeffd641feffb2f8ffff98fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -388,7 +388,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Menu
+  - demo
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -425,9 +425,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.09, y: 5.85, z: -4.51}
+    m_Target: {x: 27.022274, y: 5.85, z: 13.386071}
     speed: 2
-    m_Value: {x: 1.09, y: 5.85, z: -4.51}
+    m_Value: {x: 27.022274, y: 5.85, z: 13.386071}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -451,13 +451,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.31864348, y: 0.48851007, z: -0.19756283, w: -0.7879044}
+    m_Target: {x: -0.31864348, y: 0.48851004, z: -0.19756283, w: -0.7879044}
     speed: 2
     m_Value: {x: -0.31864348, y: 0.48851004, z: -0.19756283, w: -0.7879044}
   m_Size:
-    m_Target: 22
+    m_Target: 35.201744
     speed: 2
-    m_Value: 22
+    m_Value: 35.201744
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -541,14 +541,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/MazeGenerator
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/hectorsama/Documents/Repositorios/Interfaces/Interfaces
-    Proyecto Intermedio
+  m_LastProjectPath: /Users/usuario/Desktop/abeja/Interfaces/Interfaces Proyecto Intermedio
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 43}
-    m_SelectedIDs: be280000
-    m_LastClickedID: 10430
-    m_ExpandedIDs: 000000001a2800004e2800008c280000be28000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: a2280000
+    m_LastClickedID: 10402
+    m_ExpandedIDs: 00000000b82700000028000052280000a2280000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -576,7 +575,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a2800004e2800008c280000be28000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000b82700000028000052280000a2280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
