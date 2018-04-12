@@ -28,7 +28,7 @@ public class Menu : MonoBehaviour {
 	}
 
 	void Entrar(){
-		SceneManager.LoadScene("demo");
+		SceneManager.LoadScene("Intrucciones");
 		Debug.Log(nombre);
 
 

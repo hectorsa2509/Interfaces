@@ -16,7 +16,7 @@ public class tiempo : MonoBehaviour {
 			time -= Time.deltaTime;
 		}
 		if(time <= 0) {
-			Application.LoadLevel ("Fin");
+			Application.LoadLevel ("Recoleccion");
 		}
 
 	}

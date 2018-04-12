@@ -1,10 +1,12 @@
 OSXStandalone
 SceneListBegin?
-Assets/MazeGenerator/Menu.unity
-Assets/MazeGenerator/demo.unity
-Assets/MazeGenerator/Fin.unity
+Assets/MazeGenerator/Scenes/Inicio.unity
+Assets/MazeGenerator/Scenes/Juego.unity
+Assets/MazeGenerator/Scenes/Fin.unity
+Assets/MazeGenerator/Scenes/Intrucciones.unity
+Assets/MazeGenerator/Scenes/Recoleccion.unity
 SceneListEnd?
-aea9e8fb4bd15591d682b4007fba5251 Assembly-CSharp.dll:.MazeSpawner
+9606c16c15186b131670161ec5895993 Assembly-CSharp.dll:.MazeSpawner
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -146,3 +148,5 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Menu
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Instrucciones
+d5be1ca94278aa7358c511834dede500 Assembly-CSharp.dll:.Recoleccion
