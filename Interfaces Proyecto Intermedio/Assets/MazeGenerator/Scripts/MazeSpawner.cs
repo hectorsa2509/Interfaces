@@ -123,7 +123,7 @@ public class MazeSpawner : MonoBehaviour {
 		usado [0] = true;
 
 		for (int i = 0; i < 8; i++) {
-			for (int j = 0; j < 4; j++) {
+			for (int j = 0; j < 1; j++) {
 				int c = Random.Range (0, Columns);
 				int r = Random.Range (0, Rows);
 

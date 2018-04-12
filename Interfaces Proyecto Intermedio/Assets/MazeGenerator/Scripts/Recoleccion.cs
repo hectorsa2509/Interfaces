@@ -13,7 +13,11 @@ public class Recoleccion : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		int posx = 0;
+		for (int i = 0; i < Data.S; i++) {
 
+		}
+		
 		time = 15;
 		aceptar = GameObject.Find ("FIFO");
 		boton = aceptar.GetComponent<Button> ();

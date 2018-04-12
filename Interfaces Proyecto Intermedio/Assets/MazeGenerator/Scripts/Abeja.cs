@@ -87,10 +87,38 @@ public class Abeja : MonoBehaviour {
 		}
 	}
 
+	void Increase(string elem){
+		if (elem == null)
+			return;
+
+		char[] name = elem.ToCharArray ();
+		Data.total++;
+		if (name [0] == 'O') {
+			Data.O++;
+		} else if (name [0] == 'H') {
+			Data.H++;
+		} else if (name [0] == 'A') {
+			Data.S++;
+		} else if (name [0] == 'C' && name [0] == 'l') {
+			Data.Cl++;
+		} else if (name [0] == 'F') {
+			Data.P++;
+		} else if (name [0] == 'N') {
+			Data.N++;
+		} else if (name [0] == 'C' && name [0] == 'a') {
+			Data.C++;
+		} else if (name [0] == 'S') {
+			Data.Na++;
+		}
+		if(Data.total==8)
+			Application.LoadLevel ("Recoleccion");
+	}
+
 	void OnTriggerEnter(Collider other) {
 		//Si la abeja toca una moneda(8).
 		if (other.gameObject.layer.Equals (8)) {
 			StartCoroutine(ShowMessage (other.gameObject.tag, 2));
+			Increase (other.gameObject.tag);
 			//guiText.text = "Oxígeno";
 			if(mAudioSource != null && CoinSound != null){
 				mAudioSource.PlayOneShot(CoinSound);
