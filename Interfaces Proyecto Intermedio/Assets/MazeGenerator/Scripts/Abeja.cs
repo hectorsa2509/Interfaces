@@ -16,6 +16,8 @@ public class Abeja : MonoBehaviour {
 	private AudioSource mAudioSource = null;
 	private bool mFloorTouched = false;
 
+	public float rotationSpeed;
+
 	Text guiText;
 
 	void Start () {
@@ -39,6 +41,19 @@ public class Abeja : MonoBehaviour {
 				}
 				mRigidBody.AddForce(Vector3.up*50);
 			}
+
+			Vector3 dir = Vector3.zero;
+			dir.x = -Input.GetAxis ("Horizontal") / 5;
+			dir.z = -Input.GetAxis ("Vertical") / 5;
+
+			if (dir != Vector3.zero) {
+				transform.rotation = Quaternion.Slerp(
+					transform.rotation,
+					Quaternion.LookRotation(dir),
+					Time.deltaTime * rotationSpeed
+				);
+			}
+
 		}
 		if (ViewCamera != null) {
 			Vector3 direction = (Vector3.up*2+Vector3.back)*2;

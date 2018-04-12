@@ -119,8 +119,8 @@ public class MazeSpawner : MonoBehaviour {
 				*/
 			}
 		}
-
 		bool[] usado = new bool[Columns * Rows + 9];
+		usado [0] = true;
 
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 4; j++) {

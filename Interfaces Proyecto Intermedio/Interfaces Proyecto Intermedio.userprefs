@@ -1,12 +1,12 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MazeGenerator/Scripts/MazeSpawner.cs">
+﻿<Properties StartupItem="Interfaces Proyecto Intermedio.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MazeGenerator\Scripts\MazeSpawner.cs">
     <Files>
-      <File FileName="Assets/MazeGenerator/Scripts/Abeja.cs" Line="97" Column="18" />
-      <File FileName="Assets/MazeGenerator/Scripts/Menu.cs" Line="25" Column="13" />
-      <File FileName="Assets/MazeGenerator/Scripts/MazeSpawner.cs" Line="141" Column="41" />
-      <File FileName="Assets/MazeGenerator/Scripts/MazeCell.cs" Line="1" Column="1" />
-      <File FileName="Assets/MazeGenerator/Scripts/BasicMazeGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets\MazeGenerator\Scripts\Abeja.cs" Line="47" Column="13" />
+      <File FileName="Assets\MazeGenerator\Scripts\Menu.cs" Line="25" Column="13" />
+      <File FileName="Assets\MazeGenerator\Scripts\MazeSpawner.cs" Line="136" Column="33" />
+      <File FileName="Assets\MazeGenerator\Scripts\MazeCell.cs" Line="1" Column="1" />
+      <File FileName="Assets\MazeGenerator\Scripts\BasicMazeGenerator.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
