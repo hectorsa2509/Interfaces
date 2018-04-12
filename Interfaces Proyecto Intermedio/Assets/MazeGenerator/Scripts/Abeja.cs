@@ -87,13 +87,17 @@ public class Abeja : MonoBehaviour {
 		}
 	}
 
+	public GameObject C;
+
 	void Increase(string elem){
 		if (elem == null)
 			return;
 
 		char[] name = elem.ToCharArray ();
 		Data.total++;
+		canvas cn = (C.GetComponent<canvas> ());
 		if (name [0] == 'O') {
+			
 			Data.O++;
 		} else if (name [0] == 'H') {
 			Data.H++;
@@ -110,19 +114,21 @@ public class Abeja : MonoBehaviour {
 		} else if (name [0] == 'S') {
 			Data.Na++;
 		}
+		cn.Elemento (elem);
 		if(Data.total==8)
 			Application.LoadLevel ("Recoleccion");
 	}
-
+		
 	void OnTriggerEnter(Collider other) {
 		//Si la abeja toca una moneda(8).
 		if (other.gameObject.layer.Equals (8)) {
-			StartCoroutine(ShowMessage (other.gameObject.tag, 2));
+			//StartCoroutine(ShowMessage (other.gameObject.tag, 2));
 			Increase (other.gameObject.tag);
 			//guiText.text = "Oxígeno";
 			if(mAudioSource != null && CoinSound != null){
 				mAudioSource.PlayOneShot(CoinSound);
 			}
+
 			Destroy(other.gameObject);
 		}
 		/*
